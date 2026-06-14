@@ -10,6 +10,8 @@ The project combines autonomous indoor navigation, conversational artificial int
 
 The name TAMM-E was inspired by Pixar's iconic robot WALL-E, reflecting the project's goal of creating a friendly, intelligent, and approachable robotic assistant.
 
+While WALL-E was designed to help restore and maintain the environment, TAMM-E was developed as an educational service robot capable of assisting students, faculty, and visitors through autonomous navigation and conversational interaction.
+
 ---
 
 ## Features
