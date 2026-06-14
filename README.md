@@ -175,7 +175,9 @@ Engr. Niño U. Pilueta
 
 This repository is intended for academic and research purposes.
 
-## Why "TAMM-E"?
+---
+
+### Why "TAMM-E"?
 
 The name TAMM-E was inspired by Pixar's iconic robot WALL-E, reflecting the project's goal of creating a friendly, intelligent, and approachable robotic assistant.
 
