@@ -1,193 +1,176 @@
 # TAMM-E
-### Touch-enabled Autonomous Mobile Machine for Education
 
-TAMM-E is an autonomous indoor service robot developed as a Computer Engineering capstone project at FEU Institute of Technology.
+### Autonomous Local AI Campus Assistant for FEU Institute of Technology
 
-The robot combines autonomous navigation, obstacle avoidance, conversational AI, and an intuitive touchscreen interface to assist users in navigating indoor environments such as educational institutions.
+TAMM-e is an autonomous robotic campus assistant developed as a Computer Engineering capstone project at FEU Institute of Technology.
 
----
-
-## Project Overview
-
-TAMM-E was designed to function as an intelligent mobile assistant capable of:
-
-- Autonomous indoor navigation
-- Human-robot interaction through conversational AI
-- Real-time obstacle avoidance
-- Location guidance and educational assistance
-- Safe operation in populated environments
-
-The system utilizes ROS 2 Jazzy, Nav2, LiDAR-based localization, encoder odometry, and a custom ESP32 motor control system to achieve reliable autonomous operation.
+The project combines autonomous indoor navigation, conversational artificial intelligence, and real-time user interaction into a single robotic platform designed to assist students, faculty, and visitors.
 
 ---
 
 ## Features
 
 ### Autonomous Navigation
-- ROS 2 Jazzy Navigation Stack (Nav2)
-- Touch-to-Move Navigation
-- Autonomous Path Planning
-- Dynamic Obstacle Avoidance
-- AMCL Localization
-- Emergency Stop Recovery System
 
-### Mapping & Localization
-- SLAM Toolbox
-- Occupancy Grid Mapping
-- LiDAR-Based Localization
-- Encoder Odometry
-- IMU Sensor Fusion
+* ROS2 Jazzy Navigation Stack (Nav2)
+* LiDAR-based localization and mapping
+* Autonomous point-to-point navigation
+* Obstacle avoidance
+* AMCL localization
+* Touch-to-Move navigation interface
+* Real-time path planning
 
 ### Conversational AI
-- Speech-to-Text
-- Text-to-Speech
-- Large Language Model Integration
-- Interactive User Assistance
+
+* Local Speech-to-Text (STT)
+* Local Large Language Model (LLM)
+* Text-to-Speech (TTS)
+* School information assistance
+* Campus navigation assistance
+* QR-based database updates
+
+### Robot Systems
+
+* ESP32 motor controller
+* Differential drive locomotion
+* Encoder-based odometry
+* IMU-assisted localization
+* Battery monitoring system
+* Emergency stop system
 
 ### User Interface
-- Fullscreen Control Center
-- Navigation Mode
-- Mapping Mode
-- Follow Object Mode *(In Development)*
-- Battery Monitoring
-- Robot Status Monitoring
 
-### Safety Systems
-- Emergency Stop Switch
-- Collision Monitoring
-- Obstacle Avoidance
-- Localization Recovery
-
----
-
-## Hardware Specifications
-
-| Component | Specification |
-|------------|------------|
-| Controller | ESP32 |
-| LiDAR | RPLidar C1 |
-| IMU | MPU6050 |
-| Motor Driver | BTS7960 |
-| Motors | GB37Y3530 12V 83RPM Metal Gear Motors |
-| Encoder Resolution | 2096 CPR |
-| Battery | 24V 30Ah |
-| Drive Type | Differential Drive |
-| Wheel Diameter | 125mm |
-
----
-
-## Software Stack
-
-### Robotics
-- ROS 2 Jazzy
-- Nav2
-- AMCL
-- SLAM Toolbox
-- Robot Localization
-
-### Development
-- Python
-- C++
-- Arduino Framework
-- PyQt
-
-### AI Components
-- Speech-to-Text
-- Large Language Model
-- Text-to-Speech
+* Navigation control panel
+* Real-time robot monitoring
+* Battery status display
+* Map visualization
+* Autonomous navigation controls
 
 ---
 
 ## System Architecture
 
-```text
-Touchscreen UI
-       │
-       ▼
-ROS 2 Control Layer
-       │
- ┌─────┴─────┐
- ▼           ▼
-Localization Navigation
- (AMCL)       (Nav2)
-       │
-       ▼
-Motor Bridge
-       │
-       ▼
-ESP32 Controller
-       │
-       ▼
-BTS7960 Drivers
-       │
-       ▼
-Differential Drive Motors
-```
+TAMM-E consists of three primary subsystems:
+
+### Robotics System
+
+* ROS2 Jazzy
+* Nav2
+* AMCL
+* SLAM Toolbox
+* Robot Localization (EKF)
+* RViz
+
+### Embedded System
+
+* ESP32
+* BTS7960 Motor Drivers
+* Wheel Encoders
+* Battery Monitoring Circuit
+
+### AI System
+
+* Local LLM
+* Speech Recognition
+* Speech Synthesis
+* Campus Knowledge Database
 
 ---
 
-## Current Development Status
+## Hardware
 
-### Completed
-- Differential Drive Motor Control
-- Encoder Odometry
-- LiDAR Integration
-- Mapping System
-- Localization System
-- Autonomous Navigation
-- Obstacle Avoidance
-- Emergency Stop System
-- Battery Monitoring
-- Touch-to-Move Navigation
+### Computing
 
-### In Progress
-- Fullscreen Control Center
-- Follow Object Mode
-- Advanced Navigation UI
-- Conversational AI Integration
-- User Experience Improvements
+* Laptop PC (Main Processing Unit)
+* ESP32 Microcontroller
 
----
+### Sensors
 
-## Project Goals
+* RPLidar C1
+* MPU6050 IMU
+* Wheel Encoders
 
-The primary objectives of TAMM-E are:
+### Motion System
 
-- Provide autonomous navigation assistance
-- Deliver educational information through conversational interaction
-- Safely operate in indoor environments
-- Demonstrate the integration of robotics and artificial intelligence
-- Serve as an educational service robot platform
+* 2x GB37Y3530 12V 83RPM Geared Motors
+* 2x BTS7960 Motor Drivers
+* Differential Drive Configuration
+
+### Power System
+
+* 24V Lithium Battery
+* XL4016 Step Down Converter
 
 ---
 
-## Future Improvements
+## Software Stack
 
-- Follow-Me Navigation
-- Object Detection & Tracking
-- Face Recognition
-- Autonomous Docking
-- Multi-Floor Navigation
+* Ubuntu 24.04
+* ROS2 Jazzy
+* Nav2
+* AMCL
+* SLAM Toolbox
+* Robot Localization
+* Python
+* PyQt5
 
 ---
 
-## Authors
+## Current Capabilities
 
-### FEU Institute of Technology
+✔ Autonomous Navigation
+
+✔ Obstacle Avoidance
+
+✔ Real-Time Localization
+
+✔ Touch-to-Move Control
+
+✔ Conversational AI
+
+✔ Battery Monitoring
+
+✔ Emergency Stop Recovery
+
+✔ Map-Based Navigation
+
+---
+
+## Future Development
+
+The following features are planned for future versions of TAMM-E:
+
+* Depth Camera Integration
+* Kinect-Based Object Recognition
+* Person Following Mode
+* Multi-Floor Navigation
+* Facial Recognition
+* Emotion Recognition
+* Dynamic Route Learning
+* Autonomous Charging Dock
+* Expanded Campus Coverage
+
+---
+
+## Researchers
+
+* Christofer P. Estrada
+* Carl Marcius Daile D. Lacsamana
+* John David Ceasar C. Perez
+* Ivan Aron S. Simon
+
+FEU Institute of Technology
+
 Bachelor of Science in Computer Engineering
 
-Thesis E5 Team
+---
 
-Members:
-- John David Ceaser C. Perez
-- Ivan Aron Simon
-- Carl Lacsamana
-- Christoper Estrada
+## Adviser
+
+Engr. Niño U. Pilueta
 
 ---
 
 ## License
 
-This project was developed for academic and research purposes.
-
-© 2025 TAMM-E Development Team
+This repository is intended for academic and research purposes.
