@@ -6,6 +6,10 @@ TAMM-e is an autonomous robotic campus assistant developed as a Computer Enginee
 
 The project combines autonomous indoor navigation, conversational artificial intelligence, and real-time user interaction into a single robotic platform designed to assist students, faculty, and visitors.
 
+## Why "TAMM-E"?
+
+The name TAMM-E was inspired by Pixar's iconic robot WALL-E, reflecting the project's goal of creating a friendly, intelligent, and approachable robotic assistant.
+
 ---
 
 ## Features
@@ -174,11 +178,3 @@ Engr. Niño U. Pilueta
 ## License
 
 This repository is intended for academic and research purposes.
-
----
-
-### Why "TAMM-E"?
-
-The name TAMM-E was inspired by Pixar's iconic robot WALL-E, reflecting the project's goal of creating a friendly, intelligent, and approachable robotic assistant.
-
-While WALL-E was designed to help restore and maintain the environment, TAMM-E was developed as an educational service robot capable of assisting students, faculty, and visitors through autonomous navigation and conversational interaction.
